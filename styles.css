@@ -36,6 +36,71 @@ body {
     min-height: 100vh;
 }
 
+.darkMode span {
+    color: var(--dark-lgblue);
+}
+
+.darkMode .user-input input {
+    color: var(--dark-lgblue);
+}
+
+.darkMode {
+    background-color: var(--dark-dblue);
+}
+
+.darkMode .menu-bar .states .present {
+    color: rgb(136, 136, 250);
+    opacity: 0.8;
+}
+
+.darkMode .menu-bar .states .present:hover {
+    opacity: 1;
+}
+
+.darkMode .user-input,
+.darkMode .user-input input,
+.darkMode .todo-list .task,
+.darkMode .task .circle,
+.darkMode .menu-bar {
+    background-color: var(--dark-ddblue);
+}
+
+.darkMode .task .circle {
+    border-color: var(--dark-vdgb);
+}
+
+.darkMode .circle img {
+    opacity: 0;
+}
+  
+
+.darkMode .todo-list p {
+    color: var(--light-dgblue);
+}
+
+.darkMode .done {
+    color: var(--dark-vdgb);
+}
+
+.darkMode .states p:hover {
+    color: var(--dark-lgblue);
+}
+
+.darkMode .clear p:hover {
+    color: var(--dark-lgblue);
+    opacity: 0.8;
+}
+
+
+.darkMode .done span {
+    color: var(--dark-vdgb);
+}
+
+
+.darkMode .done img{
+    opacity: 1;
+}
+
 .todo {
     width: 30rem;
     padding-top: 4.3rem;
@@ -59,6 +124,11 @@ header {
     display: flex;
     justify-content: space-between;
     padding-bottom: 1rem;
+}
+
+
+header img{
+    cursor: pointer;
 }
 
 header p {
@@ -117,6 +187,10 @@ header p {
     transition: all 0.5s;
 }
 
+.darkMode .done .cross {
+    opacity: 0;
+}
+
 .task:hover .cross {
     opacity: 1;
 }
@@ -147,6 +221,11 @@ header p {
 
 .user-input input::placeholder {
     opacity: 0.8;
+}
+
+.user-input .circle {
+    height: 1.2rem;
+    width: 1.3rem;
 }
 
 .task:first-child {
@@ -186,7 +265,7 @@ header p {
 .menu-bar .states p {
     padding-inline: 0.4rem;
     font-weight: bold; 
-    font-size: 13px;
+    font-size: 14px;
     cursor: pointer;
     opacity: 0.6;
 }
@@ -210,6 +289,10 @@ header p {
     opacity: 1;
 }
 
+.theme-dark {
+    display: none;
+}
+
 .attribution {
     margin-top: 45px;
 }
@@ -219,6 +302,8 @@ header p {
     color: hsl(228, 45%, 44%);
     font-size: 12px;
  }
+
+
 
 
 

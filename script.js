@@ -135,3 +135,33 @@ clearCompleted.addEventListener('click', () => {
 
 
 });
+
+let darkThemeButton = document.querySelector('.moon');
+darkThemeButton.addEventListener('click', () => {
+    let lightThemes = document.querySelectorAll('.theme-light');
+    lightThemes.forEach((ltheme)=> {
+      ltheme.style.display = 'none'; 
+    });
+
+    let darkThemes = document.querySelectorAll('.theme-dark');
+    darkThemes.forEach((dtheme)=>{
+      dtheme.style.display = 'flex';
+    });
+
+    document.body.classList.add('darkMode');
+});
+
+let lightThemeButton = document.querySelector('.sun');
+lightThemeButton.addEventListener('click', () => {
+    let darkThemes = document.querySelectorAll('.theme-dark');
+    darkThemes.forEach((dtheme)=> {
+      dtheme.style.display = 'none'; 
+    });
+
+    let lightThemes = document.querySelectorAll('.theme-light');
+    lightThemes.forEach((ltheme)=>{
+      ltheme.style.display = 'flex';
+    });
+
+    document.body.classList.remove('darkMode');
+});
