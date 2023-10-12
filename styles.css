@@ -113,10 +113,13 @@ header p {
     position: absolute;
     right: 1.5rem;
     cursor: pointer;
-    display: none;
+    opacity: 0; 
+    transition: all 0.5s;
 }
 
-
+.task:hover .cross {
+    opacity: 1;
+}
 
 
 .user-input {
@@ -185,10 +188,26 @@ header p {
     font-weight: bold; 
     font-size: 13px;
     cursor: pointer;
+    opacity: 0.6;
 }
 
 .present {
     color: blue;
+    opacity: 1;
+}
+
+.states p:hover {
+    opacity: 1;
+}
+
+.menu-bar .clear {
+    color: black;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu-bar .clear:hover {
+    opacity: 1;
 }
 
 .attribution {
@@ -200,6 +219,8 @@ header p {
     color: hsl(228, 45%, 44%);
     font-size: 12px;
  }
+
+
 
 
 
